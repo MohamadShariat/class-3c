@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>hello world</h1>
 
-        <!-- this is a test branch with github desktop -->
-        <button>click me</button>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Margin Collapsing</title>
+</head>
 
-        <!-- this is change -->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae laboriosam, voluptatibus adipisci repellendus rem expedita ratione harum vero quisquam nesciunt dolorem beatae libero
-            sapiente esse architecto voluptates eum dolores?
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae laboriosam, voluptatibus adipisci repellendus rem expedita ratione harum vero quisquam nesciunt dolorem beatae libero
-            sapiente esse architecto voluptates eum dolores?
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae laboriosam, voluptatibus adipisci repellendus rem expedita ratione harum vero quisquam nesciunt dolorem beatae libero
-            sapiente esse architecto voluptates eum dolores?
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae laboriosam, voluptatibus adipisci repellendus rem expedita ratione harum vero quisquam nesciunt dolorem beatae libero
-            sapiente esse architecto voluptates eum dolores?
-        </p>
-    </body>
+<body>
+    <h1>Collapsing Child Margins</h1>
+
+    <div class="red">
+        <div class="orange">
+            <div class="yellow">
+                <div class="green">
+                    <div class="blue">
+                        <div class="purple">Collapsed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="padding red">
+        <div class="padding orange">
+            <div class="padding yellow">
+                <div class="padding green">
+                    <div class="padding blue">
+                        <div class="padding purple">Not Collapsed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
